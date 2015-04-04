@@ -1,0 +1,14 @@
+{% load cms_tags %}
+<section {{ section.attrs|safe }}>
+    {% if section.container %}
+        <div class="container">
+        {% for plugin in section.child_plugin_instances %}
+            {% render_plugin plugin %}
+        {% endfor %}
+        </div>
+    {% else %}
+        {% for plugin in section.child_plugin_instances %}
+            {% render_plugin plugin %}
+        {% endfor %}
+    {% endif %}
+</section>

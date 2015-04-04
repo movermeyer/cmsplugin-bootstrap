@@ -1,0 +1,49 @@
+{% load cms_tags %}
+{% load sekizai_tags %}
+{% load static from staticfiles %}
+{% load bootstrap %}
+
+{% addtoblock 'css' %}
+<link rel="stylesheet" href="{% static 'css/cmsplugin_bootstrap_carousel/carousel-effects.css' %}" media="all" />
+{% endaddtoblock 'css' %}
+
+<div {{ carousel.attrs|safe }}>
+
+    {% if carousel.show_indicator %}
+    <ol class="carousel-indicators">
+        {% for item in carousel.child_plugin_instances %}
+        <li data-slide-to="{{ forloop.counter0 }}" data-target="#{{ carousel.id_for_html_prop }}" class="{% if forloop.first %}active{% endif %}"></li>
+        {% endfor %}
+    </ol>
+    {% endif %}
+
+    <div role="listbox" class="carousel-inner">
+        {% for item in carousel.child_plugin_instances %}
+            <div class="{% if forloop.first %}active {% endif %}item">
+
+                {% if item.image and not item.child_plugin_instances %}
+                    {% render_image item.image %}
+                    {% render_plugin item %}
+                {% elif item.image %}
+                    {% render_image item.image %}
+                    <div class="carousel-caption">{% render_plugin item %}</div>
+                {% else %}
+                    {% render_plugin item %}
+                {% endif %}
+
+            </div>
+        {% endfor %}
+    </div>
+
+    {% if carousel.show_controls %}
+    <a data-slide="prev" role="button" href="#{{ carousel.id_for_html_prop }}" class="left carousel-control">
+        <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a data-slide="next" role="button" href="#{{ carousel.id_for_html_prop }}" class="right carousel-control">
+        <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    {% endif %}
+
+</div>

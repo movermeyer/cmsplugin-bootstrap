@@ -1,0 +1,6 @@
+{% load cms_tags %}
+<div {{ column.attrs.as_html }}>
+    {% for plugin in column.child_plugin_instances %}
+        {% render_plugin plugin %}
+    {% endfor %}
+</div>

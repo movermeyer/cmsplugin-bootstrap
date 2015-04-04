@@ -1,0 +1,6 @@
+{% load cms_tags %}
+<div {{ row.attrs.as_html }}>
+    {% for plugin in row.child_plugin_instances %}
+        {% render_plugin plugin %}
+    {% endfor %}
+</div>
