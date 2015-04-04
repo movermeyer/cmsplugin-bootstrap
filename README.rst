@@ -49,5 +49,5 @@ Quick start
 
 3. Run ``python manage.py migrate`` to create the polls models.
 
-4. Start the development server and visit http://127.0.0.1:8000/
+4. Start the development server ``python manage.py runserver`` and visit http://localhost:8000/
    to be happy :).
