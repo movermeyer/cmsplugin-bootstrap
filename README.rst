@@ -21,14 +21,14 @@ Features
 Quick start
 -----------
 
-1. Add "cmsplugin_bootstrap_carousel" to your INSTALLED_APPS setting like this::
+1. Add ``cmsplugin_bootstrap`` to your INSTALLED_APPS and all the plugins you want, setting like this::
 
     INSTALLED_APPS = (
         ...
 
         'cmsplugin_bootstrap',
 
-        # Uncomment plugins
+        # uncomment the plugins you want
         # 'cmspligin_bootstrap_carousel',
         # 'cmspligin_bootstrap_grid',
         # 'cmspligin_bootstrap_section',
@@ -41,7 +41,7 @@ Quick start
 
         'cmsplugin_bootstrap': 'cmsplugin_bootstrap.migrations_django',
 
-        # Uncomment plugins
+        # uncomment the plugins you want
         # 'cmspligin_bootstrap_carousel': 'cmsplugin_bootstrap.migrations_django',
         # 'cmspligin_bootstrap_grid': 'cmspligin_bootstrap_grid.migrations_django',
         # 'cmspligin_bootstrap_section': 'cmspligin_bootstrap_section.migrations_django',
