@@ -7,7 +7,7 @@ DjangoCMS Plugins for Bootstrap
 A plugin for creating and managing the component `bootstrap` in djangoCMS.
 
 `Bootstrap <http://getbootstrap.com/>`_
-------------------------------------------------------------------
+---------------------------------------
 
 Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
 
@@ -38,6 +38,7 @@ Quick start
 
     MIGRATION_MODULES = {
         ...
+
         'cmsplugin_bootstrap': 'cmsplugin_bootstrap.migrations_django',
 
         # Uncomment plugins
