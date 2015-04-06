@@ -33,7 +33,7 @@ class AttributeDict(dict):
 
         .. code-block:: python
 
-            >>> from cmsplugin_bootstrap_carousel.utils import AttributeDict
+            >>> from cmsplugin_bootstrap.utils import AttributeDict
             >>> attrs = AttributeDict({'class': 'mytable', 'id': 'someid'})
             >>> attrs.as_html()
             'class="mytable" id="someid"'

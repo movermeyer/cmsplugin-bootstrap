@@ -1,27 +1,38 @@
-.. image:: https://travis-ci.org/arkanister/cmsplugin-bootstrap-carousel.svg?branch=master
-    :target: https://travis-ci.org/arkanister/cmsplugin-bootstrap-carousel
+CMSPlugin for Bootstrap Section
+===============================
 
-CMSPlugin for Bootstrap Carousel
-================================
+A plugin for creating and managing the component ``bootstrap-grid`` in djangoCMS.
 
-A plugin for creating and managing the component `bootstrap-carousel` in djangoCMS.
+`Bootstrap Grid <http://getbootstrap.com/css/#grid>`_
+-----------------------------------------------------
 
-`Bootstrap Carousel <http://getbootstrap.com/javascript/#carousel>`_
-------------------------------------------------------------------
-
-A slideshow component for cycling through elements, like a carousel. **Nested carousels are not supported.**
+Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.
 
 Quick start
 -----------
 
-1. Add "cmsplugin_bootstrap_carousel" to your INSTALLED_APPS setting like this::
+1. Add ``cmsplugin_bootstrap_grid`` to your ``INSTALLED_APPS`` setting like this::
 
     INSTALLED_APPS = (
         ...
-        'cmsplugin_bootstrap_carousel',
+
+        # Bootstrap plugins
+        'cmsplugin_bootstrap',
+        'cmsplugin_bootstrap_grid',
     )
 
-2. Run `python manage.py migrate` to create the polls models.
+2. Define migrations modules. (Only django >= 1.7)::
 
-3. Start the development server and visit http://127.0.0.1:8000/
-   to create a carousel.
+    MIGRATION_MODULES = {
+        ...
+
+        'cmsplugin_bootstrap': 'cmsplugin_bootstrap.migrations_django',
+
+        # uncomment the plugins you want
+        # 'cmspligin_bootstrap_grid': 'cmspligin_bootstrap_grid.migrations_django',
+    }
+
+3. Run ``python manage.py migrate`` to create the polls models.
+
+4. Start the development server ``python manage.py runserver`` and visit http://localhost:8000/
+   to be happy :).
