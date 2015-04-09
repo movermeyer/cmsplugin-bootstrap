@@ -37,3 +37,5 @@ media/*
 
 # Database
 *.db
+
+*.egg-info
