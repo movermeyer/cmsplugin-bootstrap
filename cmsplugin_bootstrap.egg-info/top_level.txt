@@ -1,0 +1,4 @@
+cmsplugin_bootstrap_section
+cmsplugin_bootstrap_grid
+cmsplugin_bootstrap
+cmsplugin_bootstrap_carousel

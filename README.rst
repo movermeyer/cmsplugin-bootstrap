@@ -1,6 +1,12 @@
 .. image:: https://travis-ci.org/arkanister/cmsplugin-bootstrap.svg?branch=master
     :target: https://travis-ci.org/arkanister/cmsplugin-bootstrap
 
+.. image:: https://pypip.in/v/cmsplugin-bootstrap/badge.png
+   :target: https://pypi.python.org/pypi/cmsplugin-bootstrap
+
+.. image:: https://pypip.in/d/cmsplugin-bootstrap/badge.png
+   :target: https://pypi.python.org/pypi/cmsplugin-bootstrap
+
 DjangoCMS Plugins for Bootstrap
 ===============================
 
