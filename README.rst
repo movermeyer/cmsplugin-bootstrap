@@ -6,6 +6,10 @@
 
 .. image:: https://pypip.in/d/cmsplugin-bootstrap/badge.png
    :target: https://pypi.python.org/pypi/cmsplugin-bootstrap
+   
+.. image:: https://badge.waffle.io/arkanister/cmsplugin-bootstrap.svg?label=ready&title=Ready
+   :target: https://waffle.io/arkanister/cmsplugin-bootstrap
+   :alt: 'Stories in Ready' 
 
 DjangoCMS Plugins for Bootstrap
 ===============================
