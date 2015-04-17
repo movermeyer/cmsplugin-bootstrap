@@ -32,7 +32,7 @@ Quick start
         # 'cmspligin_bootstrap_carousel': 'cmspligin_bootstrap_carousel.migrations_django',
     }
 
-3. Run ``python manage.py migrate`` to create the polls models.
+3. Run ``python manage.py migrate`` or ``python manage.py syncdb``.
 
 4. Start the development server ``python manage.py runserver`` and visit http://localhost:8000/
    to be happy :).
