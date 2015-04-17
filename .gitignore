@@ -38,4 +38,7 @@ media/*
 # Database
 *.db
 
-*.egg-info
+# pypi
+*.egg-info/
+build/
+dist/
