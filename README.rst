@@ -1,10 +1,10 @@
 .. image:: https://travis-ci.org/arkanister/cmsplugin-bootstrap.svg?branch=master
     :target: https://travis-ci.org/arkanister/cmsplugin-bootstrap
 
-.. image:: https://pypip.in/v/cmsplugin-bootstrap/badge.png
+.. image:: https://img.shields.io/pypi/v/cmsplugin-bootstrap.svg
    :target: https://pypi.python.org/pypi/cmsplugin-bootstrap
 
-.. image:: https://pypip.in/d/cmsplugin-bootstrap/badge.png
+.. image:: https://img.shields.io/pypi/dm/cmsplugin-bootstrap.svg
    :target: https://pypi.python.org/pypi/cmsplugin-bootstrap
    
 .. image:: https://badge.waffle.io/arkanister/cmsplugin-bootstrap.svg?label=ready&title=Ready
